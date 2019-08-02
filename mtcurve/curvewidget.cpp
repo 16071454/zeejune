@@ -43,23 +43,8 @@ void curveWidget::mousePressEvent( QMouseEvent * e )
 void curveWidget::wheelEvent( QWheelEvent* e )
 {
     qreal delta = static_cast<qreal>( e->delta() ) / 120.0 / 10.0;
-   // coordinatePlane()->setZoomFactorX( coordinatePlane()->zoomFactorX() + delta );
-   // coordinatePlane()->setZoomFactorY( coordinatePlane()->zoomFactorY() + delta );
-	m_plane->setZoomFactorX(m_plane->zoomFactorX() + delta);
-	m_plane->setZoomFactorY(m_plane->zoomFactorY() + delta);
-/* new:
-    const QPointF zoomCenter( findNewZoomCenter( e->pos() ) );
-    if ( zoomCenter != coordinatePlane()->zoomCenter() ) {
-        qDebug() << "zoom center = " << zoomCenter;
-        coordinatePlane()->setZoomCenter( zoomCenter );
-    }
-*/
-/* old:
-    qreal zoomCenterX = static_cast<qreal>( e->pos().x() ) / static_cast<qreal>( width() );
-    qreal zoomCenterY = static_cast<qreal>( e->pos().y() ) / static_cast<qreal>( height() );
-    QPointF zoomCenter( zoomCenterX, zoomCenterY );
-    coordinatePlane()->setZoomCenter( zoomCenter );
-*/
+    m_plane->setZoomFactorX(m_plane->zoomFactorX() + delta);
+    m_plane->setZoomFactorY(m_plane->zoomFactorY() + delta);
     update();
 }
 
