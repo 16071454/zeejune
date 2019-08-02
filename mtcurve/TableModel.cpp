@@ -1,0 +1,197 @@
+#include "TableModel.h"
+
+#include <QtGlobal>
+#include <QtDebug>
+#include <QFile>
+#include <QByteArray>
+#include <QString>
+#include <QStringList>
+#include <QtCore/qmath.h>
+
+TableModel::TableModel(QObject* parent)
+: QAbstractTableModel(parent),
+m_dataHasHorizontalHeaders(true),
+m_dataHasVerticalHeaders(true),
+m_supplyHeaderData(true)
+{
+}
+
+TableModel::~TableModel()
+{
+}
+
+int TableModel::rowCount(const QModelIndex&) const
+{
+	return m_rows.size();
+}
+
+int TableModel::columnCount(const QModelIndex&) const
+{
+	return m_rows.isEmpty() ? 0 : m_rows.first().size();
+}
+
+QVariant TableModel::data(const QModelIndex& index, int role) const
+{
+	if (index.row() == -1 || index.column() == -1) {
+		qDebug() << "TableModel::data: row:"
+			<< index.row() << ", column:" << index.column()
+			<< ", rowCount:" << rowCount() << ", columnCount:"
+			<< columnCount() << endl
+			<< "TableModel::data: FIXME fix kdchart views to not query"
+			" model data for invalid indices!";
+		return QVariant();
+	}
+
+	Q_ASSERT(index.row() >= 0 && index.row() < rowCount());
+	Q_ASSERT(index.column() >= 0 && index.column() < columnCount());
+
+	if (role == Qt::DisplayRole || role == Qt::EditRole) {
+		return m_rows[index.row()][index.column()];
+	}
+	else {
+		return QVariant();
+	}
+}
+
+QVariant TableModel::headerData(int section, Qt::Orientation orientation, int role) const
+{
+	QVariant result;
+	switch (role) {
+	case Qt::DisplayRole:
+	case Qt::EditRole:
+		if (m_supplyHeaderData) 
+		{
+			if (orientation == Qt::Horizontal) {
+				// column header data
+				if (!m_horizontalHeaderData.isEmpty())
+					result = m_horizontalHeaderData[section];
+			}
+			else {
+				// row header data:
+				if (!m_verticalHeaderData.isEmpty())
+				{
+					result = m_verticalHeaderData[section];
+				}
+			}
+		}
+		break;
+	case Qt::TextAlignmentRole:
+		//        result = QVariant ( Qt::AlignHCenter | Qt::AlignHCenter );
+		break;
+	case Qt::DecorationRole:
+	case Qt::ToolTipRole:
+		break;
+	default:
+		//        qDebug () << "TableModel::headerData: unknown role " << role << "." << endl;
+		break;
+	}
+	return result;
+}
+
+
+bool TableModel::setData(const QModelIndex& index, const QVariant& value, int role/* = Qt::EditRole */)
+{
+	Q_ASSERT(index.row() >= 0 && index.row() < rowCount());
+	Q_ASSERT(index.column() >= 0 && index.column() < columnCount());
+
+	if (role == Qt::EditRole) {
+		m_rows[index.row()][index.column()] = qSin(value.toDouble()/10.0) * 10;// value;
+		emit dataChanged(index, index);
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+static QStringList splitLine(const QString& line)
+{
+	QStringList sl = line.split(QChar(','));
+	QStringList ret;
+	for (int i = 0; i < sl.size(); i++) {
+		QString s = sl.at(i).simplified();
+		if (s.startsWith('\"')) {
+			s.remove(0, 1);
+		}
+		if (s.endsWith('\"')) {
+			s.remove(s.length() - 1, 1);
+		}
+		ret.append(s);
+	}
+	return ret;
+}
+
+bool TableModel::loadFromDataBase(QList<CurvDataStruct> _listdata,QString name)
+{
+	QStringList lines;
+	QString headline;
+	m_horizontalHeaderData.clear();
+	m_verticalHeaderData.clear();
+	m_rows.clear();
+	headline=QString("%1,%2\n").arg(QString::fromLocal8Bit(tr("Ê±¼ä"))).arg(name);
+	lines.append(headline);
+	QListIterator<CurvDataStruct>iter(_listdata);
+	while (iter.hasNext())
+	{
+		QString line;
+		CurvDataStruct anadata = iter.next();
+		
+		line = QString("%1,%2\n").arg(anadata.startTime).arg(anadata._value);
+		lines.append(line);
+	}
+	
+	m_rows.resize(qMax(0, lines.size() -(m_dataHasHorizontalHeaders ? 1 : 0) ));
+	
+	for (int row = 0; row <lines.size(); ++row) {
+		QStringList cells = splitLine(lines.at(row));
+
+		QVector<QVariant> values(qMax(0, cells.size() - (m_dataHasVerticalHeaders ? 1 : 0)));
+
+		for (int column = 0; column < cells.size(); ++column) {
+			QString cell = cells.at(column);
+
+			if (row == 0 && m_dataHasHorizontalHeaders) {
+				if (column == 0 && m_dataHasVerticalHeaders) {
+					setTitleText(cell);
+					
+				}
+				else {
+					m_horizontalHeaderData.append(cell);
+				}
+			}
+			else {
+				if (column == 0 && m_dataHasVerticalHeaders) {
+					
+					m_verticalHeaderData.append(cell);
+				}
+				else {
+					// try to interpret cell values as floating point
+					bool convertedOk = false;
+					qreal numeric = cell.toDouble(&convertedOk);
+					const int destColumn = column - (m_dataHasVerticalHeaders ? 1 : 0);
+					values[destColumn] = convertedOk ? numeric : (cell.isEmpty() ? QVariant() : cell);
+				}
+			}
+		}
+		const int destRow = row - (m_dataHasHorizontalHeaders ? 1 : 0);
+		if (destRow >= 0) {
+			m_rows[destRow] = values;
+		}
+	}
+
+	beginResetModel();
+	endResetModel();
+
+	if (m_rows.isEmpty()) {
+		qDebug() << "TableModel::loadFromCSV: table loaded, but no "
+		"model data found.";
+		}
+	return true;
+}
+
+void TableModel::clear()
+{
+	beginResetModel();
+	m_rows.clear();
+	endResetModel();
+}

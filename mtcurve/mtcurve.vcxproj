@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AC735FF1-5A72-30CF-9B51-F973CF10E007}</ProjectGuid>
+    <RootNamespace>mtcurve</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>d:\MTP-NEW\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\..\..\tmp\obj\mtcurve\</IntermediateDirectory>
+    <PrimaryOutput>mtcurve</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>d:\MTP-NEW\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\..\..\..\tmp\obj\mtcurve\</IntermediateDirectory>
+    <PrimaryOutput>mtcurve</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\bin\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\..\..\tmp\obj\mtcurve\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">mtcurve</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\bin\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\..\..\tmp\obj\mtcurve\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">mtcurve</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>&quot;c:\qt-4.8.7-64bit\include\QtCore&quot;;&quot;c:\qt-4.8.7-64bit\include\QtGui&quot;;&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot;;&quot;c:\qt-4.8.7-64bit\include&quot;;&quot;..\..\..\..\include&quot;;&quot;..\..\..\..\include\thirdpartyinc&quot;;&quot;..\..\..\..\include\baseapk&quot;;&quot;..\..\..\..\include\kernelapk&quot;;&quot;..\..\..\..\include\rtdbblock&quot;;&quot;..\..\..\..\include\deviceapk&quot;;&quot;..\..\..\..\include\scadaapk&quot;;&quot;..\..\..\..\include\fesapk&quot;;&quot;..\..\..\..\include\guiapk&quot;;&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot;;&quot;.&quot;;&quot;$(MTPDIR)\source\src\guiapk&quot;;&quot;.&quot;;&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot;;&quot;.&quot;;&quot;$(MTPDIR)\source\include\historyapk&quot;;&quot;.&quot;;&quot;$(MTPDIR)\source\include&quot;;&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot;;&quot;..\..\..\..\tmp\moc\mtcurve&quot;;&quot;..\..\..\..\tmp\ui\mtcurve&quot;;c:\qt-4.8.7-64bit\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\..\..\tmp\obj\mtcurve\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>..\..\..\..\tmp\obj\mtcurve\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;QT_DEBUG;_WINDOWS;QT_DLL;QT_QT3SUPPORT_LIB;QT3_SUPPORT;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>c:\qt-4.8.7-64bit\lib\qtmaind.lib;D:\MTP-NEW/lib\cryptlib.lib;D:\MTP-NEW/lib\hiscurve.lib;D:\MTP-NEW/lib\hisdbaccess.lib;D:\MTP-NEW/lib\kdchartd2.lib;D:\MTP-NEW/lib\commonlib.lib;D:\MTP-NEW/lib\guilib.lib;D:\MTP-NEW/lib\mtobjsyslib.lib;D:\MTP-NEW/lib\modelimportoollib.lib;D:\MTP-NEW/lib\netcore.lib;D:\MTP-NEW/lib\scadamgr.lib;D:\MTP-NEW/lib\fesinfoproclib.lib;D:\MTP-NEW/lib\scadaapi.lib;D:\MTP-NEW/lib\scadaserverlib.lib;D:\MTP-NEW/lib\rtdbcore.lib;D:\MTP-NEW/lib\guibaselib.lib;D:\MTP-NEW/lib\mtscadaobjlib.lib;c:\qt-4.8.7-64bit\lib\Qt3Supportd4.lib;c:\qt-4.8.7-64bit\lib\QtGuid4.lib;c:\qt-4.8.7-64bit\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\qt-4.8.7-64bit\lib;D:\MTP-NEW/lib;D:\MTP-NEW/lib/thirdpartylib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\mtcurve.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;QT_DEBUG;_WINDOWS;QT_DLL;QT_QT3SUPPORT_LIB;QT3_SUPPORT;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>&quot;c:\qt-4.8.7-64bit\include\QtCore&quot;;&quot;c:\qt-4.8.7-64bit\include\QtGui&quot;;&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot;;&quot;c:\qt-4.8.7-64bit\include&quot;;&quot;..\..\..\..\include&quot;;&quot;..\..\..\..\include\thirdpartyinc&quot;;&quot;..\..\..\..\include\baseapk&quot;;&quot;..\..\..\..\include\kernelapk&quot;;&quot;..\..\..\..\include\rtdbblock&quot;;&quot;..\..\..\..\include\deviceapk&quot;;&quot;..\..\..\..\include\scadaapk&quot;;&quot;..\..\..\..\include\fesapk&quot;;&quot;..\..\..\..\include\guiapk&quot;;&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot;;&quot;.&quot;;&quot;$(MTPDIR)\source\src\guiapk&quot;;&quot;.&quot;;&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot;;&quot;.&quot;;&quot;$(MTPDIR)\source\include\historyapk&quot;;&quot;.&quot;;&quot;$(MTPDIR)\source\include&quot;;&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot;;&quot;..\..\..\..\tmp\moc\mtcurve&quot;;&quot;..\..\..\..\tmp\ui\mtcurve&quot;;c:\qt-4.8.7-64bit\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\..\..\..\tmp\obj\mtcurve\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>..\..\..\..\tmp\obj\mtcurve\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;QT_DEBUG;_WINDOWS;QT_DLL;QT_NO_DEBUG;QT_QT3SUPPORT_LIB;QT3_SUPPORT;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>c:\qt-4.8.7-64bit\lib\qtmain.lib;D:\MTP-NEW/lib\cryptlib.lib;D:\MTP-NEW/lib\hiscurve.lib;D:\MTP-NEW/lib\hisdbaccess.lib;D:\MTP-NEW/lib\kdchartd2.lib;D:\MTP-NEW/lib\commonlib.lib;D:\MTP-NEW/lib\guilib.lib;D:\MTP-NEW/lib\mtobjsyslib.lib;D:\MTP-NEW/lib\modelimportoollib.lib;D:\MTP-NEW/lib\netcore.lib;D:\MTP-NEW/lib\scadamgr.lib;D:\MTP-NEW/lib\fesinfoproclib.lib;D:\MTP-NEW/lib\scadaapi.lib;D:\MTP-NEW/lib\scadaserverlib.lib;D:\MTP-NEW/lib\rtdbcore.lib;D:\MTP-NEW/lib\guibaselib.lib;D:\MTP-NEW/lib\mtscadaobjlib.lib;c:\qt-4.8.7-64bit\lib\Qt3Support4.lib;c:\qt-4.8.7-64bit\lib\QtGui4.lib;c:\qt-4.8.7-64bit\lib\QtCore4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\qt-4.8.7-64bit\lib;D:\MTP-NEW/lib;D:\MTP-NEW/lib/thirdpartylib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\mtcurve.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;QT_DEBUG;_WINDOWS;QT_DLL;QT_NO_DEBUG;QT_QT3SUPPORT_LIB;QT3_SUPPORT;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="TableModel.cpp" />
+    <ClCompile Include="chartpaintthread.cpp" />
+    <ClCompile Include="datatabledialog.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="mtbasecurvedialog.cpp" />
+    <ClCompile Include="mtkdchart.cpp" />
+    <ClCompile Include="mtlistthread.cpp" />
+    <ClCompile Include="mylinediagram.cpp" />
+    <ClCompile Include="qupdatethread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="TableModel.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;TableModel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 TableModel.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_TableModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC TableModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_TableModel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;TableModel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 TableModel.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_TableModel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC TableModel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_TableModel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="chartpaintthread.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;chartpaintthread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 chartpaintthread.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_chartpaintthread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC chartpaintthread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_chartpaintthread.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;chartpaintthread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 chartpaintthread.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_chartpaintthread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC chartpaintthread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_chartpaintthread.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="datatabledialog.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;datatabledialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 datatabledialog.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_datatabledialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC datatabledialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_datatabledialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;datatabledialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 datatabledialog.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_datatabledialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC datatabledialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_datatabledialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 mainwindow.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 mainwindow.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mtbasecurvedialog.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;mtbasecurvedialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 mtbasecurvedialog.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtbasecurvedialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC mtbasecurvedialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtbasecurvedialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;mtbasecurvedialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 mtbasecurvedialog.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtbasecurvedialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC mtbasecurvedialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtbasecurvedialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mtkdchart.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;mtkdchart.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 mtkdchart.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtkdchart.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC mtkdchart.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtkdchart.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;mtkdchart.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 mtkdchart.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtkdchart.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC mtkdchart.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtkdchart.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mtlistthread.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;mtlistthread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 mtlistthread.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtlistthread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC mtlistthread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtlistthread.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;mtlistthread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 mtlistthread.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtlistthread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC mtlistthread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_mtlistthread.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="mylinediagram.h" />
+    <CustomBuild Include="qupdatethread.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;qupdatethread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 qupdatethread.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_qupdatethread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC qupdatethread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_qupdatethread.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe;qupdatethread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\moc.exe  -DWIN32 -DQT_DEBUG -D_WINDOWS -DQT_DLL -DQT_NO_DEBUG -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\qt-4.8.7-64bit\include\QtCore&quot; -I&quot;c:\qt-4.8.7-64bit\include\QtGui&quot; -I&quot;c:\qt-4.8.7-64bit\include\Qt3Support&quot; -I&quot;c:\qt-4.8.7-64bit\include&quot; -I&quot;..\..\..\..\include&quot; -I&quot;..\..\..\..\include\thirdpartyinc&quot; -I&quot;..\..\..\..\include\baseapk&quot; -I&quot;..\..\..\..\include\kernelapk&quot; -I&quot;..\..\..\..\include\rtdbblock&quot; -I&quot;..\..\..\..\include\deviceapk&quot; -I&quot;..\..\..\..\include\scadaapk&quot; -I&quot;..\..\..\..\include\fesapk&quot; -I&quot;..\..\..\..\include\guiapk&quot; -I&quot;$(MTPDIR)\source\include\guiapk\mtcurve&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\src\guiapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\thirdpartyinc\kdchart&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include\historyapk&quot; -I&quot;.&quot; -I&quot;$(MTPDIR)\source\include&quot; -I&quot;c:\qt-4.8.7-64bit\include\ActiveQt&quot; -I&quot;..\..\..\..\tmp\moc\mtcurve&quot; -I&quot;..\..\..\..\tmp\ui\mtcurve&quot; -Ic:\qt-4.8.7-64bit\mkspecs\win32-msvc2013 -D_MSC_VER=1800 -DWIN32 qupdatethread.h -o d:\MTP-NEW\source\tmp\moc\mtcurve\moc_qupdatethread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC qupdatethread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\moc\mtcurve\moc_qupdatethread.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\tmp\moc\mtcurve\moc_TableModel.cpp" />
+    <ClCompile Include="..\..\..\..\tmp\moc\mtcurve\moc_chartpaintthread.cpp" />
+    <ClCompile Include="..\..\..\..\tmp\moc\mtcurve\moc_datatabledialog.cpp" />
+    <ClCompile Include="..\..\..\..\tmp\moc\mtcurve\moc_mainwindow.cpp" />
+    <ClCompile Include="..\..\..\..\tmp\moc\mtcurve\moc_mtbasecurvedialog.cpp" />
+    <ClCompile Include="..\..\..\..\tmp\moc\mtcurve\moc_mtkdchart.cpp" />
+    <ClCompile Include="..\..\..\..\tmp\moc\mtcurve\moc_mtlistthread.cpp" />
+    <ClCompile Include="..\..\..\..\tmp\moc\mtcurve\moc_qupdatethread.cpp" />
+    <ClInclude Include="..\..\..\..\tmp\ui\mtcurve\ui_datatabledialog.h" />
+    <ClInclude Include="..\..\..\..\tmp\ui\mtcurve\ui_mainwindow.h" />
+    <ClInclude Include="..\..\..\..\tmp\ui\mtcurve\ui_mtbasecurvedialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="datatabledialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe;datatabledialog.ui;guibaselib\commontitlebar.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe datatabledialog.ui -o d:\MTP-NEW\source\tmp\ui\mtcurve\ui_datatabledialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC datatabledialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\ui\mtcurve\ui_datatabledialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe;datatabledialog.ui;guibaselib\commontitlebar.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe datatabledialog.ui -o d:\MTP-NEW\source\tmp\ui\mtcurve\ui_datatabledialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC datatabledialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\ui\mtcurve\ui_datatabledialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe;mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe mainwindow.ui -o d:\MTP-NEW\source\tmp\ui\mtcurve\ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\ui\mtcurve\ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe;mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe mainwindow.ui -o d:\MTP-NEW\source\tmp\ui\mtcurve\ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\ui\mtcurve\ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mtbasecurvedialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe;mtbasecurvedialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe mtbasecurvedialog.ui -o d:\MTP-NEW\source\tmp\ui\mtcurve\ui_mtbasecurvedialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC mtbasecurvedialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">d:\MTP-NEW\source\tmp\ui\mtcurve\ui_mtbasecurvedialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe;mtbasecurvedialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\qt-4.8.7-64bit\bin\uic.exe mtbasecurvedialog.ui -o d:\MTP-NEW\source\tmp\ui\mtcurve\ui_mtbasecurvedialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC mtbasecurvedialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">d:\MTP-NEW\source\tmp\ui\mtcurve\ui_mtbasecurvedialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
